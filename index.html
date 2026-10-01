@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#0d0b1f">
+  <title>趣玩街机 · 小游戏合集</title>
+
+  <!-- 像素展示字体 + 中文正文字体（自托管镜像） -->
+  <link rel="stylesheet"
+        href="https://miaoda.feishu.cn/fonts/css2?family=Press+Start+2P&family=Noto+Sans+SC:wght@400;500;700;900&display=swap">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div id="app">
+    <!-- 游戏大厅视图（由 arcade.js 渲染） -->
+    <div id="view-hall" class="view"></div>
+
+    <!-- 游戏运行视图（由 arcade.js 动态构建） -->
+    <div id="view-game" class="view"></div>
+  </div>
+
+  <!-- CRT 扫描线效果 -->
+  <div class="crt-overlay"></div>
+
+  <!-- 游戏模块（先注册，主控最后启动路由） -->
+  <script src="snake.js"></script>
+  <script src="game2048.js"></script>
+  <script src="breakout.js"></script>
+  <script src="memory.js"></script>
+  <script src="reaction.js"></script>
+  <script src="arcade.js"></script>
+</body>
+</html>
